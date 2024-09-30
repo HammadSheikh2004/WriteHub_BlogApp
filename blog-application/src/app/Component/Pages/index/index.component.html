@@ -1,0 +1,43 @@
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-md-2">
+            <h5 class="my-3">Categories</h5>
+            @for (item of cat; track cat) {
+            <div class="list-group">
+                <a [routerLink]="['/']" [queryParams]="{category:item}" [class.active]="category === item"
+                    class="list-group-item list-group-item-action mt-2" style="width: 150px;">{{item}}</a>
+            </div>
+            }
+        </div>
+
+        <div class="col-md-10">
+            <div class="row">
+                @for (item of filteredData; track filteredData) {
+                <div class="col-md-4 mt-3">
+                    <a [routerLink]="['/blogDetail']" [queryParams]="{ blog: item.blogCatId }" class="text-decoration-none">
+                        <div class="card">
+                            @if(item.image){
+                            <img src="http://localhost:5241/Blog/blog_images/{{item.image}}" width="100%" height="200px"
+                                class="card-img-top" alt="...">
+                            }@else {
+                            <img src="http://localhost:5241/Blog/blog_images/{{item.blogImage}}" width="100%"
+                                height="200px" class="card-img-top" alt="...">
+                            }
+                            <div class="card-body">
+                                <h5 class="card-title">{{item.blogCategory ? item.blogCategory : item.blog_cat}}</h5>
+                                <div class="card-text"
+                                    [innerHTML]="sanitizeContent(item.content ? item.content : item.blogContent)"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                }
+
+            </div>
+
+        </div>
+
+
+    </div>
+</div>

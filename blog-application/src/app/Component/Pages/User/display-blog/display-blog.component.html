@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row mb-3">
+        <div class="col-md-12">
+            <div class="h3 text-center border border-primary py-2 my-2 bg-white shadow rounded">Your Blogs</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <thead class="text-center">
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Content</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Image</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    @for(item of data; track item;let i = $index){
+                    <tr>
+                        <th scope="row">{{i+1}}</th>
+                        <td [innerHTML]="item.content">{{item.content}}</td>
+                        <td>{{item.catName}}</td>
+                        <td><img src="http://localhost:5241/Blog/blog_images/{{item.blogImage}}" width="80px"
+                                height="80px" alt=""></td>
+                        <td class="text-center">
+                            <a [routerLink]="['/user/userDashboard/editBlog', item.blogId]"
+                                class="badge bg-warning p-2 mt-4 text-decoration-none me-2"
+                                style="font-size: 15px;">Edit</a>
+                            <a (click)="deleteBlog(item.blogId)"
+                                class="badge bg-danger p-2 mt-4 text-decoration-none me-2"
+                                style="font-size: 15px;">Delete</a>
+                        </td>
+                    </tr>
+                    }@empty {
+                    <div>Please wait Blogs are loading...</div>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

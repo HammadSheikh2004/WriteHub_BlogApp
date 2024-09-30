@@ -1,0 +1,15 @@
+<a [routerLink]="['/user/userDashboard']" class="link mb-4">DashBoard</a>
+
+
+<form #form="ngForm" (submit)="submitFormData(form)" enctype="multipart/form-data">
+  <input type="text" name="Blog_Category" id="category" [(ngModel)]="formData.Blog_Category"
+    placeholder="Enter Category" class="form-control my-3">
+
+  <input type="file" name="BlogImage" id="blog_image" class="form-control my-3">
+
+  <div class="NgxEditor__Wrapper">
+    <ngx-editor-menu [editor]="editor" [toolbar]="toolbar"></ngx-editor-menu>
+    <ngx-editor [(ngModel)]="formData.Content" name="Content" [editor]="editor"></ngx-editor>
+  </div>
+  <button type="submit" class="btn btn-primary mt-4">Save Content</button>
+</form>

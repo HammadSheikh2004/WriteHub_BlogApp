@@ -1,0 +1,15 @@
+<form #form="ngForm" (submit)="UpdateFormData(form)" enctype="multipart/form-data">
+    <input type="hidden" name="blogCatId" [(ngModel)]="blogData.blogCatId">
+    <input type="text" name="Blog_Category" id="category" placeholder="Enter Category"
+    [(ngModel)]="blogData.blogCategory" class="form-control my-3">
+
+    <img src="http://localhost:5241/Blog/blog_images/{{blogData?.blogImage}}" width="80px" height="80px" alt="">
+    <input type="file" name="BlogImage" id="blog_image" class="form-control my-3">
+
+
+    <div class="NgxEditor__Wrapper">
+        <ngx-editor-menu [editor]="editor" [toolbar]="toolbar"></ngx-editor-menu>
+        <ngx-editor name="Content" [editor]="editor" [(ngModel)]="blogData.blogContent"></ngx-editor>
+    </div>
+    <button type="submit" class="btn btn-primary mt-4">Edit Content</button>
+</form>

@@ -1,0 +1,13 @@
+form .form-control{
+    box-shadow: none !important;
+}
+
+form .form-control:focus{
+border-color: var(--pink) !important;
+}
+
+.goSignUp{
+    all: unset;
+    color: var(--pink);
+    cursor: pointer;
+}

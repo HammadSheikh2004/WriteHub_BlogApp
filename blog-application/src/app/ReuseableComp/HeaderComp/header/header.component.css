@@ -1,0 +1,65 @@
+.navbar-nav .nav-item .signup {
+  background-image: var(--linearGradient);
+  color: var(--white);
+}
+
+.navbar-nav .nav-item .signin {
+  background-color: transparent !important;
+  color: var(--black);
+  margin-left: 10px;
+  border: 1px solid transparent;
+  border-image: var(--linearGradient) 1;
+  padding: 7px 10px;
+  transition: background-image 0.3s ease-in-out, color 0.3s ease-in-out,
+    transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item .signin:hover {
+  background-image: var(--linearGradient);
+  color: var(--white);
+  transform: scale(1.05);
+}
+
+.token-btn{
+  background-image: var(--linearGradient);
+  color: var(--white);
+  text-decoration: none;
+  padding: 8px;
+}
+
+.form-control:focus{
+  box-shadow: none !important;
+  border-color: var(--pink) !important;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-nav .nav-item .signup {
+    display: inline-block !important;
+    padding: 10px !important;
+    margin-bottom: 10px;
+  }
+
+  .navbar-nav .nav-item .signin {
+    display: inline-block !important;
+    padding: 10px !important;
+    margin-left: 0px !important;
+    width: 100px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .navbar-nav .nav-item .signup {
+    display: inline-block !important;
+    padding: 10px !important;
+    margin-bottom: 10px;
+  }
+
+  .navbar-nav .nav-item .signin {
+    display: inline-block !important;
+    padding: 10px !important;
+    margin-left: 0px !important;
+    width: 100px;
+    text-align: center;
+  }
+}

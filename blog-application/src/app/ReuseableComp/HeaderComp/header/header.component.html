@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg bg-body-white">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">WriteHub</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="searchBar">
+                <input type="search" placeholder="Search Here..." class="form-control" (input)="onSearchChange($event)">
+            </div>
+            <ng-container *ngIf="userToken; else loginLinks">
+                <a *ngIf="isAdmin" [routerLink]="['/admin/adminDashboard']" class="ms-auto token-btn">Admin
+                    Dashboard</a>
+                <a *ngIf="!isAdmin" [routerLink]="['/user/userDashboard']" class="ms-auto token-btn">User Dashboard</a>
+            </ng-container>
+            <ng-template #loginLinks>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link signup" [routerLink]="['/registration']">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link signin" [routerLink]="['/signin']">Sign In</a>
+                    </li>
+                </ul>
+            </ng-template>
+        </div>
+    </div>
+</nav>

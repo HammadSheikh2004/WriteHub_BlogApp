@@ -1,0 +1,23 @@
+<div class="section">
+  <div class="app-userheader">
+    @if(data?.image){
+    <img src="http://localhost:5241/user_images/{{data.image}}" class="img_circle my-3" width="200px" height="200px" alt="">
+    }@else{
+    <img src="assets/Images/userAvatar.png" width="200px" height="200px" alt="">
+    }
+    <div class="text-center">
+      <a [routerLink]="['/user/userDashboard/profile']" class="link">Update Profile</a>
+      <a [routerLink]="['/user/userDashboard/createBlog']" class="link">Create Blog</a>
+      <a [routerLink]="['/user/userDashboard/displayBlogs']" class="link">Display Blogs</a>
+      <button type="button" class="btn btn-primary" (click)="logout()">
+        <i class="fa-sharp fa-solid fa-arrow-right-from-bracket pe-2"></i>Logout
+      </button>
+    </div>
+  </div>
+
+  <div class="content">
+    <p class="h3">User Dashboard</p>
+    <p class="h5 my-4">User Name : {{data?.fullName}} </p>
+    <router-outlet></router-outlet>
+  </div>
+</div>

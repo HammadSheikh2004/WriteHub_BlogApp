@@ -1,0 +1,6 @@
+<div class="container">
+    <p class="h4">Welcome : {{AdminDetail.fullName}}</p>
+    <button type="submit" class="btn btn-primary" (click)="logout()">Logout</button>
+    <a [routerLink]="['/admin/adminDashboard/profile']" class="btn btn-primary">Update Profile</a>
+    <router-outlet></router-outlet>
+</div>

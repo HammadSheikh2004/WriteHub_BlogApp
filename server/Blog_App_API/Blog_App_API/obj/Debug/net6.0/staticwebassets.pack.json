@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\muhammad hammad\\Pictures\\BlogApplication\\server\\Blog_App_API\\Blog_App_API\\wwwroot\\Blog\\blog_images\\blog_250sports_1.png",
+      "PackagePath": "staticwebassets\\Blog\\blog_images\\blog_250sports_1.png"
+    },
+    {
+      "Id": "C:\\Users\\muhammad hammad\\Pictures\\BlogApplication\\server\\Blog_App_API\\Blog_App_API\\wwwroot\\Blog\\blog_images\\blog_315pro_1.png",
+      "PackagePath": "staticwebassets\\Blog\\blog_images\\blog_315pro_1.png"
+    },
+    {
+      "Id": "C:\\Users\\muhammad hammad\\Pictures\\BlogApplication\\server\\Blog_App_API\\Blog_App_API\\wwwroot\\Blog\\blog_images\\blog_598sports_2.png",
+      "PackagePath": "staticwebassets\\Blog\\blog_images\\blog_598sports_2.png"
+    },
+    {
+      "Id": "C:\\Users\\muhammad hammad\\Pictures\\BlogApplication\\server\\Blog_App_API\\Blog_App_API\\wwwroot\\user_images\\image_462person_4.jpg",
+      "PackagePath": "staticwebassets\\user_images\\image_462person_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\muhammad hammad\\Pictures\\BlogApplication\\server\\Blog_App_API\\Blog_App_API\\wwwroot\\user_images\\image_895person_1.jpg",
+      "PackagePath": "staticwebassets\\user_images\\image_895person_1.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Blog_App_API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Blog_App_API.props",
+      "PackagePath": "build\\Blog_App_API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Blog_App_API.props",
+      "PackagePath": "buildMultiTargeting\\Blog_App_API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Blog_App_API.props",
+      "PackagePath": "buildTransitive\\Blog_App_API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

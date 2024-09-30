@@ -1,0 +1,12 @@
+.card{
+    border-color: var(--pink);
+}
+
+.gradient-text {
+    font-size: 2rem; 
+    font-weight: bold;
+    background:var(--linearGradient) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  

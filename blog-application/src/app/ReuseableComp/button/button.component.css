@@ -1,0 +1,20 @@
+.button {
+  all: unset;
+  background-color: transparent !important;
+  color: var(--black);
+  margin-left: 10px;
+  border: 1px solid transparent;
+  border-image: var(--linearGradient) 1;
+  padding: 7px 10px;
+  transition: background-image 0.3s ease-in-out, color 0.3s ease-in-out,
+    transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 0px !important;
+}
+
+.button:hover {
+  background-image: var(--linearGradient);
+  color: var(--white);
+  transform: scale(1.05);
+}

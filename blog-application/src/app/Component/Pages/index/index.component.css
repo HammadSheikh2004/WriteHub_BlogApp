@@ -1,0 +1,13 @@
+.active {
+  background: var(--linearGradient) !important;
+}
+
+.active:focus {
+  border-color: none;
+}
+
+.card-text {
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+}

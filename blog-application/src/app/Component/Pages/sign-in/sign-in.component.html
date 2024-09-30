@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <app-heading headingText="Welcome Back To iBlog"></app-heading>
+    <div class="row mt-4">
+        <div class="col-md-6 order-sm-1 order-2">
+            <div id="signImage" style="width: 100%; height: 80%;"></div>
+        </div>
+        <div class="col-md-6 order-sm-2 order-1">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="h2 mb-3">Sign In Yourself</div>
+                    <form #form="ngForm" (submit)="submitData(form)">
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email"  #Email="ngModel" [(ngModel)]="signinData.Email" name="Email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" #Password="ngModel" [(ngModel)]="signinData.Password" name="Password"
+                                class="form-control" id="password">
+                        </div>
+                        <app-button btnText="Sign In" (clickBtn)="btnSubmit(form)"></app-button>
+                    </form>
+                </div>
+            </div>
+
+            <p class="h5">Don't Have an Account? <span><a class="goSignUp"
+                        [routerLink]="['/registration']">Register</a></span> Now.</p>
+        </div>
+    </div>
+
+
+</div>

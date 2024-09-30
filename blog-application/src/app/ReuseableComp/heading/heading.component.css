@@ -1,0 +1,22 @@
+.alert {
+  background: var(--linearGradient);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  color: var(--white);
+  background-size: 200% auto;
+  animation: animate 2s linear infinite; 
+  font-size: 30px;
+  padding: 10px 0px !important;
+  font-weight: bold;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}

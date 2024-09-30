@@ -1,0 +1,11 @@
+form .form-control {
+  box-shadow: none !important;
+}
+
+form .form-control:focus {
+  border-color: var(--pink) !important;
+}
+
+form input[readonly] {
+  background: rgb(244, 255, 255);
+}

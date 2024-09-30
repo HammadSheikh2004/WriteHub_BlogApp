@@ -1,0 +1,42 @@
+:root {
+  --linearGradient: linear-gradient(to left, #ef3ff4, #943dff);
+  --white: #ffffff;
+  --black: #000000;
+  --pink: #ef3ff4;
+}
+
+.toast-top-right {
+  top: 15%;
+  right: 12px;
+}
+
+.toast-error {
+  background-color: #d32f2f !important; /* Red background */
+  color: #ffffff !important; /* White text */
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.toast-error .toast-title {
+  color: #ffffff !important; /* Optional: Yellow title color */
+}
+
+.toast-error .toast-message {
+  color: #ffffff !important; /* White text */
+}
+
+
+.toast-success {
+  background-color: rgb(19, 180, 19) !important; /* Red background */
+  color: #ffffff !important; /* White text */
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.toast-success .toast-title {
+  color: #ffffff !important; /* Optional: Yellow title color */
+}
+
+.toast-success .toast-message {
+  color: #ffffff !important; /* White text */
+}
